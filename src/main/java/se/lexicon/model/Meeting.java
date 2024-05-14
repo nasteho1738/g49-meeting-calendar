@@ -1,6 +1,5 @@
 package se.lexicon.model;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Meeting {
@@ -19,7 +18,7 @@ public class Meeting {
         this.description = description;
     }
 
-    public Meeting(String title, LocalDateTime startTime, LocalDateTime endTime, String description, Calendar calendar) {
+    public Meeting(String title, String startTime, LocalDateTime endTime, LocalDateTime description, int calendar) {
         this.title = title;
         this.startTime = startTime;
         this.endTime = endTime;
@@ -81,4 +80,6 @@ public class Meeting {
     }
 
 
+    public void setId(int id) {
+    }
 }
